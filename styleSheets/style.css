@@ -1,3 +1,4 @@
+/* General */
 body {
     background-color: aliceblue;
 }
@@ -25,4 +26,41 @@ img {
     padding:  5px;
     border: 5px solid steelblue;
     background-color: aliceblue;
+}
+
+/* Index Only */
+#squashimage {
+    width: 200px;
+    float: middle;
+    float: top;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding:  5px;
+    border: 0px;
+}
+
+li.joke {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* About Only */
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+}
+
+img.myimages {
+    width: 200px;
+    padding:  5px;
+    border: 5px solid steelblue;
+    background-color: aliceblue;
+    margin-right: ;
+}
+
+.caption {
+    display: block;
+    margin: 10px;
 }
