@@ -1,4 +1,7 @@
-/* General */
+
+div.buffer {
+    margin-top: 500px
+}
 body {
     background-color: aliceblue;
 }
@@ -11,7 +14,7 @@ h2 {
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 50px;
-}
+    }
 
 h3 {
     color: rgb(32, 20, 109);
@@ -28,7 +31,7 @@ img {
     background-color: aliceblue;
 }
 
-/* Index Only */
+
 #squashimage {
     width: 200px;
     float: middle;
@@ -39,12 +42,6 @@ img {
     border: 0px;
 }
 
-li.joke {
-    font-style: italic;
-    font-weight: bold;
-}
-
-/* About Only */
 div.item {
     vertical-align: top;
     display: inline-block;
@@ -63,4 +60,59 @@ img.myimages {
 .caption {
     display: block;
     margin: 10px;
+}
+
+
+.index_link{
+    text-decoration: none;
+    text-decoration-color: steelblue;
+}
+
+.index_link :hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+.sidenav{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    height: 1000px; 
+    width: 200px; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: steelblue;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.sidenav h1{
+    position: absolute;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: steelblue;
+    background-color: snow;
+    width: 160px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.sidenav a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    font-family: sans-serif;
+}
+
+.links{
+    margin-top: 60px;
+    padding-left: 10%;
+}
+
+.sidenav a:hover{
+    text-decoration: underline;
 }
