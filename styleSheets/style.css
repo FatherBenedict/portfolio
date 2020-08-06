@@ -1,4 +1,3 @@
-
 div.buffer {
     margin-top: 500px
 }
@@ -30,7 +29,6 @@ img {
     border: 5px solid steelblue;
     background-color: aliceblue;
 }
-
 
 #squashimage {
     width: 200px;
@@ -72,7 +70,6 @@ img.myimages {
     text-decoration: underline;
     text-decoration-color: black;
 }
-
 
 .sidenav{
     display: inline-block;
