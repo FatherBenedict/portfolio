@@ -3,6 +3,7 @@ div.buffer {
 }
 body {
     background-color: aliceblue;
+    
 }
 
 h2 {
@@ -60,19 +61,32 @@ img.myimages {
     margin: 10px;
 }
 
-
 .index_link{
-    text-decoration: none;
-    text-decoration-color: steelblue;
+    height: 75px;
+    margin: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.index_link :link{
+    color: snow;
+}
+
+.index_link :visited{
+    color: snow;
 }
 
 .index_link :hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+    color: black;
+}
+
+.index_link :active{
+    color: black;
 }
 
 .sidenav{
-    display: inline-block;
+    
     position: relative;
     top: 100px;
     height: 1000px; 
@@ -82,26 +96,31 @@ img.myimages {
     left: 0;
     background-color: steelblue;
     overflow-x: hidden;
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-left: 10px;
 }
 
 .sidenav h1{
     position: absolute;
     font-size: 25px;
     font-family: sans-serif;
-    color: steelblue;
-    background-color: snow;
+    color: snow;
+    background-color: steelblue;
     width: 160px;
     margin-left: 20px;
     text-align: center;
 }
 
+#sidesep{
+    border: 2px solid snow;
+}
+
 .sidenav a{
     margin-top: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17.5px;
     color: black;
-    display: block;
+    display: inline-block;
     font-family: sans-serif;
 }
 
