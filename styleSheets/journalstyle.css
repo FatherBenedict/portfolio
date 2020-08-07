@@ -1,0 +1,28 @@
+.journal{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.jimageleft{
+    float: left;
+}
+
+.jimageright{
+    float: right;
+}
+
+#journal1{
+    background-color: teal;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+}
+
+#journal2{
+    background-color: slategrey;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+}
+
