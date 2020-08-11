@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <!-- USER INTERFACE -->
+    <h1>Press r, p, or s to Play</h1>
+    <h3>r = ROCK</h3>
+    <h3>p = PAPER</h3>
+    <h3>s = SCISSORS</h3>
+    <img src="C:\Users\alexa\Downloads\PennCamp\W2D2_Stu_Activities\Stu_Activities\03-Stu_RPS\RPS-example.png" alt="Rock Paper Scissors">
+
+    <!-- GAME CODE -->
+    <script type="text/javascript">
+
+        //score counter//
+        var winCounter = 0
+        var lossCounter = 0
+        var tieCounter = 0
+
+        document.addEventListener("keydown", function(event) {
+
+            var keyPressed = event.key
+
+        //rng//
+            var array = ["r", "p", "s"];
+            array [Math.floor(Math.random()*3)]
+
+        //Meat//
+
+            //Chose Rock//
+            if(keyPressed == "r" && array [Math.floor(Math.random()*3)] == "r") {
+                tieCounter++
+                alert("You Tied (Computer Chose Rock)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+            
+            else if(keyPressed == "r" && array [Math.floor(Math.random()*3)] == "p") {
+                lossCounter++
+                alert("You Lost (Computer Chose Paper)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+            else if(keyPressed == "r" && array [Math.floor(Math.random()*3)] == "s") {
+                winCounter++
+                alert("You Won (Computer Chose Scissors)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+            //Chose Paper//
+            if(keyPressed == "p" && array [Math.floor(Math.random()*3)] == "p") {
+                tieCounter++
+                alert("You Tied (Computer Chose Paper)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+            
+            else if(keyPressed == "p" && array [Math.floor(Math.random()*3)] == "s") {
+                lossCounter++
+                alert("You Lost (Computer Chose Scissors)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+            else if(keyPressed == "p" && array [Math.floor(Math.random()*3)] == "r") {
+                winCounter++
+                alert("You Won (Computer Chose Rock)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+            //Chose Scissors//
+            if(keyPressed == "s" && array [Math.floor(Math.random()*3)] == "s") {
+                tieCounter++
+                alert("You Tied (Computer Chose Scissors)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+            
+            else if(keyPressed == "s" && array [Math.floor(Math.random()*3)] == "r") {
+                lossCounter++
+                alert("You Lost (Computer Chose Rock)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+            else if(keyPressed == "s" && array [Math.floor(Math.random()*3)] == "p") {
+                winCounter++
+                alert("You Won (Computer Chose Paper)");
+                alert("Your Win/Tie/Loss Ratio: " + winCounter + "/" + tieCounter + "/" + lossCounter);
+            }
+
+        }
+        )
+        
+    </script>
+</body>
+</html>
